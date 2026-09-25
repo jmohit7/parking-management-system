@@ -1,6 +1,6 @@
 package com.parking.entity;
 
-import com.parking.util.Status;
+import com.parking.util.ParkingStatus;
 
 import java.time.LocalDateTime;
 
@@ -10,7 +10,7 @@ public class ParkingSession {
     private LocalDateTime entryTime;
     private LocalDateTime exitTime;
     private int fee;
-    private Status status;
+    private ParkingStatus status;
 
     public Vehicle getVehicle() {
         return vehicle;
@@ -52,11 +52,11 @@ public class ParkingSession {
         this.fee = fee;
     }
 
-    public Status getStatus() {
+    public ParkingStatus getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(ParkingStatus status) {
         this.status = status;
     }
 }

@@ -1,6 +1,10 @@
 package com.parking.entity;
 
 public abstract class Vehicle {
-    String vehicleNumber;
-    abstract String getVehicleNumber();
+    private String vehicleNumber;
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+    abstract String getVehicleType();
 }

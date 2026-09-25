@@ -1,8 +1,10 @@
 package com.parking.entity;
 
+import com.parking.util.ParkingSpotStatus;
+
 public class ParkingSpot {
     private String spotNumber;
-    private String currentStatus;
+    private ParkingSpotStatus parkingSpotStatus;
     private String suitableFor;
     private Vehicle vehicle;
 
@@ -14,12 +16,12 @@ public class ParkingSpot {
         this.spotNumber = spotNumber;
     }
 
-    public String getCurrentStatus() {
-        return currentStatus;
+    public ParkingSpotStatus getParkingSpotStatus() {
+        return parkingSpotStatus;
     }
 
-    public void setCurrentStatus(String currentStatus) {
-        this.currentStatus = currentStatus;
+    public void setParkingSpotStatus(ParkingSpotStatus parkingSpotStatus) {
+        this.parkingSpotStatus = parkingSpotStatus;
     }
 
     public String getSuitableFor() {

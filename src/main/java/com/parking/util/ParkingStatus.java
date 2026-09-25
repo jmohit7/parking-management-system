@@ -1,5 +1,5 @@
 package com.parking.util;
 
-public enum Status {
+public enum ParkingStatus {
     ACTIVE, COMPLETED
 }
